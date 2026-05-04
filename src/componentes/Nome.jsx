@@ -1,21 +1,49 @@
-import { useState } from "react"
-function Nome (){
+import { useEffect, useState } from "react"
 
-    const [nome, setNome] = useState ("Samuel")
+function Nome() {
 
-    return(
-        <div>    
-            <h1 className="tema-azul border">Nome</h1>
-            <p style={{ fontStyle: "italic"}}>Nome: {nome}</p>
-            <button onClick={() => setNome("João")}>Nome exemplo</button>
-            <button className="button" onClick={() => setNome("Samuel")}>Alterar nome</button>
-       
-        <input type="text" onChange={(e) => setNome(e.target.value)} />
-                <input type="text" onBlur={(e) => setNome(e.target.value)} />
+    const [nome, setNome] = useState()
+    const [idade, setIdade] = useState()
 
-       
-         </div>
+
+
+useEffect(()=>{
+    alert("Ola")
+}, [nome])
+
+
+    // useEffect(()=>{
+    //     if(!nome) return
+    //     alert("Ola vc chegou no nome")
+
+
+    // }, [nome])
+
+
+    // useEffect(()=>{
+    //     alert("O nome foi alterado")
+    // },[nome])
+
+    return (
+
+        <div>
+
+            <h1>Nome</h1>
+
+            <p>{nome}</p>
+
+            <button onClick={()=> setNome("Pedroso") } >Alterar para sobrenome</button>
+            <button onClick={()=> setNome("Bruno")} >Alterar para nome</button>
+            <button onClick={()=>  setIdade(50) } >Alterar idedae</button>
+            <button onClick={()=>  setIdade(60) } >Alterar idedae</button>
+
+
+        <input type="text" onBlur={(e)=>setNome(e.target.value)} />
+
+
+        </div>
     )
+
 }
 
 export { Nome }

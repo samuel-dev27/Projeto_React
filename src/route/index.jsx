@@ -1,9 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "../pages/Home";
-import { ListaMunicipio } from "../pages/ListaMunicipio";
+import { ListaMunicipio } from "../pages/ListaMunicipi";
 import { Login } from "../pages/Login";
-import { ListaDeProdutos } from "../pages/ListaDeProdutos";
-// import { ListaDeEstados } from "../componentes/ListaDeEstados";
+import { Produto } from "../pages/Produto";
+
 
 export function RouteApp() {
   return (
@@ -11,9 +11,11 @@ export function RouteApp() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/ListaDeProdutos" element={<ListaDeProdutos />} />
+
         <Route path="/municipios" element={<ListaMunicipio />} /> 
-        {/* <Route path="/listadeestados" element={<ListaDeEstados />} /> */}
+       
+        <Route path="/produtos" element={<Produto />} /> 
+
       </Routes>
     </BrowserRouter> 
   );

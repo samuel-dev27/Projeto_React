@@ -1,13 +1,13 @@
 import CarouselAnuncios from "../componentes/CarouselAnuncios";
-import { Informacoes } from "../componentes/Curriculo/Informacoes";
+import { ListaProdutos } from "../componentes/ListaProdutos";
 import NavBar from "../componentes/NavBar";
 
 function Home() {
 
   return (
     <div>
-      <NavBar/>
-      <CarouselAnuncios/>
+
+<h1>HOME</h1>      <CarouselAnuncios/>
     </div>
   );
 }

@@ -1,7 +1,6 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { GerenciarLogin } from "./GerenciarLogin";
 import { GerenciarLoginInicial } from "./GerenciarLoginInicial";
-import { GerenciadorDeLogin } from "./gerenciadorDeLogin";
 
 
 function NavBar(props) {
@@ -17,7 +16,7 @@ function NavBar(props) {
           <Navbar.Collapse className="justify-content-end">
             <Navbar.Text>
               {/* <GerenciarLoginInicial /> */}
-              <GerenciadorDeLogin />
+              <GerenciarLogin />
             </Navbar.Text>
           </Navbar.Collapse>
         </Container>

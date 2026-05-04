@@ -1,8 +1,10 @@
-function Sobrenome (){
-    return(
+
+function Sobrenome() {
+
+    return (
         <div>
-            <h1>sobrenome: </h1>
-            <p>Albarran</p>
+            <h1> Sobrenome</h1>
+            <p>Pedroso</p>
         </div>
     )
 }
